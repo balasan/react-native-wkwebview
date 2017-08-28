@@ -468,5 +468,7 @@ var styles = StyleSheet.create({
     backgroundColor: '#ffffff',
   }
 });
-
+if (RCTWKWebView.name === 'UnimplementedView') {
+  WKWebView = null;
+}
 export default WKWebView;
