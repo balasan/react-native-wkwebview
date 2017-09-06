@@ -468,7 +468,7 @@ var styles = StyleSheet.create({
     backgroundColor: '#ffffff',
   }
 });
-if (!RCTWKWebView.prototype.viewConfig) {
+if (!UIManager.RCTWKWebView) {
   WKWebView = null;
 }
 export default WKWebView;
